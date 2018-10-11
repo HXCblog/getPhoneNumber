@@ -50,7 +50,8 @@ Page({
     phoneObj: '',
   },
 
-  onLoad: function () {  
+  onLoad: function () {
+    
   },
 
   //通过绑定手机号登录
@@ -65,10 +66,10 @@ Page({
         //console.log('code转换', res.code); 
         //用code传给服务器调换session_key
         wx.request({
-          url: 'https://disqus.huxinchun.com/demo/getphone.php', //接口请求地址
+          url: 'https://www.demo.com/demo/getphone.php', //接口请求地址
           data: {
-            appid: "wx5c686ac37579f0a3", //小程序appid，登录微信后台查看
-            secret: "3779c2acddf6b23be2b9c8356510a8b7", //小程序secret，登录微信后台可查看
+            appid: " ", //小程序appid，登录微信后台查看
+            secret: " ", //小程序secret，登录微信后台可查看
             code: res.code,
             encryptedData: telObj,
             iv: ivObj
